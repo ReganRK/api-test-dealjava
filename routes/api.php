@@ -38,5 +38,4 @@ Route::middleware(ApiAuthMiddleware::class)->group(function () {
 
     Route::post('/sales', [SalesController::class, 'addSales']);
     Route::get('/sales', [SalesController::class, 'index']);
-    Route::delete('/sales/{id}', [SalesController::class, 'updateSales']);
 });
